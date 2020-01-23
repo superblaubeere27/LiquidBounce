@@ -15,3 +15,10 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: cd 1.8.9-Forge && chmod +x gradlew && ./gradlew setupCiWorkspace build
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: LiquidBounce
+        # Directory containing files to upload
+        path: 1.8.9-Forge/build/libs/LiquidBounce-b69.jar
