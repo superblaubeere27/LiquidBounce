@@ -21,4 +21,4 @@ jobs:
         # Artifact name
         name: LiquidBounce
         # Directory containing files to upload
-        path: 1.8.9-Forge/build/libs/LiquidBounce-b*.jar
+        path: 1.8.9-Forge/build/libs/
